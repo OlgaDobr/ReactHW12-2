@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import PersonalPage from './Components/PersonalPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+            <div>
+                <PersonalPage
+                   
+                />
+            </div>
+        );
+      }
+      
+        const personalInfo = {
+            name: 'Ольга',
+            phone: '+7 (952) 835-12-30',
+            email: 'andromeda2005@bk.ru',
+            city: 'Краснодар',
+            photo: 'https://fs.top-academy.ru/api/v1/files/kBP-OFQNwFRhmufAAY552OiPBZvp3mam', 
+        };
 
 export default App;
